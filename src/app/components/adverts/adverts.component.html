@@ -1,0 +1,10 @@
+<ul class="list-group">
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<li class="list=group-item" *ngFor="let listing of listings">
+<a [routerLink]="['/singleadvert/'+listing.$key]">{{listing.username}}</a>
+</li>
+
+</ul>
