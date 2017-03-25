@@ -3,8 +3,29 @@
 	<br/>
 	<br/>
 	<br/>
+	
+	
+	
 	<li class="list=group-item" *ngFor="let listing of listings">
-<a [routerLink]="['/singleadvert/'+listing.$key]">{{listing.username}}</a>
+		<div class="col-md-4">
+	
+
+</div>
+<div class="col-md-8">
+<ul class="list-group">
+	<li><a [routerLink]="['/singleadvert/'+listing.$key]">Posted by: {{listing.username}}</a></li>
+
+	<li class="list-group-item">Leaving: {{listing.comingFrom}}</li>
+	<li class="list-group-item">Going To? {{listing.goingTo}}</li>
+	<li class="list-group-item">Number of Seats: {{listing.noOfSeats}}</li>
+	<li class="list-group-item">Going to LatLng: {{listing.goingToLat}}</li>
+	<li class="list-group-item"><img style="width: 400px" [src]="listing.image"/></li>
+	
+</ul>
+	
+
+
+</div>
 </li>
 
 </ul>

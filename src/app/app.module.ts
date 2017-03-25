@@ -27,7 +27,7 @@ const firebaseAuthConfig = {
 };
 const appRoutes: Routes = [
     {path: '', component:HomeComponent},
-    {path: 'rideshares', component:AdvertsComponent},
+    {path: 'adverts', component:AdvertsComponent},
 	{path: 'singleadvert/:id', component:SingleadvertComponent},
     {path: 'addadvert', component:AddadvertComponent}
 ]

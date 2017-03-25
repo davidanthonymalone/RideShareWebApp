@@ -1,6 +1,26 @@
+<div *ngIf="listing">
 <p>
 	<br/>
 	<br/>
 	<br/>
 <a [routerLink]="['/singleadvert']">Go Back</a>
 	<h2 class="paeg-header">{{listing.username}}<small>{{listing.leaving}}</small></h2>
+<div class="col-md-4">
+	<img style="width: 200px" [src]="listing.image"/>
+
+</div>
+
+<div class="col-md-8">
+<ul class="list-group">
+	<li class="list-group-item">User: {{listing.username}}</li>
+	<li class="list-group-item">Leaving: {{listing.leaving}}</li>
+	<li class="list-group-item">Number of Seats: {{listing.noOfSeats}}</li>
+	<li class="list-group-item">Seats Remaining: {{listing.seatsRemaining}}</li>
+	
+</ul>
+	<a class="btn btn-default" href="#">Delete</a>
+		<a class="btn btn-danger" href="#">Edit</a>
+
+
+</div>
+</div>

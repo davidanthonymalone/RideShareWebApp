@@ -1,5 +1,27 @@
-<p>
+<a [routerLink]="['/adverts']">Back</a>
 <br/>
-<br/>
-  addadvert works!
-</p>
+ 
+
+<br />
+<h2 class="page-header">Add RideShare</h2>
+<form (submit)="onAddSubmit()">
+  <div class="form-group">
+    <label>ComingFrom?</label>
+    <input class="form-control" type="text" [(ngModel)]="comingFrom" name="comingFrom" required>
+  </div>
+  <div class="form-group">
+    <label>GoingTo?</label>
+    <input class="form-control" type="text" [(ngModel)]="goingTo" name="comingFrom" required>
+  </div>
+  <div class="form-group">
+    <label>How Many Seats?</label>
+    <input class="form-control" type="text" [(ngModel)]="noOfSeats" name="noOfSeats" required>
+  </div>
+ 
+  
+  <div class="form-group">
+    <input id="image" name="image" [(ngModel)]="image" type="file" >
+  </div>
+  
+  <input type="submit" value="submit" class="btn btn-success">
+</form>
